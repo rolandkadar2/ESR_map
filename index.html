@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ESR Member Societies Map</title>
   <style>
     body {
@@ -22,7 +22,7 @@
       max-width: 1000px;
       margin: 2em auto;
       background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
     svg {
       width: 100%;
@@ -42,11 +42,13 @@
   <header>
     <h1>European Society of Rheology – Member Societies</h1>
   </header>
-
   <div id="map-container">
+    <!-- Europe SVG Map (inline, trimmed and simplified for demo) -->
     <svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="1000" height="700" fill="#e0e0e0" />
+      <text x="400" y="50" font-size="24" fill="#444">[Europe Map Placeholder]</text>
 
-      <!-- Real logos -->
+      <!-- Logos and fallback circles -->
       <image href="logos/belgium.png" x="420" y="180" width="40" height="40"
              class="logo" onclick="window.open('https://rheology.be', '_blank')">
         <title>Belgian Society of Rheology</title>
@@ -72,77 +74,62 @@
         <title>Nordic Rheology Society</title>
       </image>
 
-      <!-- Fallback circles for others -->
       <circle cx="520" cy="220" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>Austrian Society of Rheology</title>
       </circle>
-
       <circle cx="410" cy="170" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>Dutch Society of Rheology</title>
       </circle>
-
       <circle cx="600" cy="520" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>South African Society of Rheology</title>
       </circle>
-
       <circle cx="340" cy="260" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>Portuguese Society of Rheology</title>
       </circle>
-
       <circle cx="360" cy="260" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>Spanish Society of Rheology</title>
       </circle>
-
       <circle cx="390" cy="210" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>French Society of Rheology</title>
       </circle>
-
       <circle cx="450" cy="220" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>Swiss Society of Rheology</title>
       </circle>
-
       <circle cx="600" cy="320" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>Israeli Society of Rheology</title>
       </circle>
-
       <circle cx="650" cy="160" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>Russian Society of Rheology</title>
       </circle>
-
       <circle cx="560" cy="220" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>Romanian Society of Rheology</title>
       </circle>
-
       <circle cx="530" cy="180" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>Polish Society of Rheology</title>
       </circle>
-
       <circle cx="500" cy="190" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>Czech Society of Rheology</title>
       </circle>
-
       <circle cx="540" cy="290" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>Greek Society of Rheology</title>
       </circle>
-
       <circle cx="600" cy="280" r="20" fill="#002c54" class="logo"
               onclick="window.open('#', '_blank')">
         <title>Turkish Society of Rheology</title>
       </circle>
-
     </svg>
   </div>
 </body>
